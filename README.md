@@ -1,5 +1,7 @@
 # Gotenberg on Railway
 
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/gotenberg-3?utm_medium=integration&utm_source=button&utm_campaign=gotenberg)
+
 A Railway template for [Gotenberg](https://gotenberg.dev), a Docker-based API that turns HTML, Markdown, URLs and Office documents into PDFs, and merges, splits, signs, stamps and converts PDFs (PDF/A, PDF/UA).
 
 ## What it deploys
