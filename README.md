@@ -6,7 +6,7 @@ A Railway template for [Gotenberg](https://gotenberg.dev), a Docker-based API th
 
 ## What it deploys
 
-- **Gotenberg 9.5.1**, built from this repo's `Dockerfile`, which pins the official image `gotenberg/gotenberg:9.5.1` by digest. Chromium and LibreOffice are included.
+- **Gotenberg 9.6.0**, built from this repo's `Dockerfile`, which pins the official image `gotenberg/gotenberg:9.6.0` by digest. Chromium and LibreOffice are included.
 - One public service with a Railway domain. No database and no volume: Gotenberg is stateless and stores nothing.
 - Health check: `GET /health` (open, no auth).
 
