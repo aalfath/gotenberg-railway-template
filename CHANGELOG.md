@@ -2,6 +2,12 @@
 
 Each entry is one version of this Railway template. Breaking changes come first.
 
+## 9.8.0 (2026-11-19)
+
+- No breaking changes. Gotenberg is stateless, so there is no data to migrate.
+- Gotenberg [9.7.0](https://github.com/gotenberg/gotenberg/releases/tag/v9.7.0) and [9.8.0](https://github.com/gotenberg/gotenberg/releases/tag/v9.8.0): `fileBookmarks` on `merge`, Markdown output from `extract-text`, an OpenAPI description, PDF/A font remediation fixes, and the memory limits no longer kill an idle Chromium or LibreOffice right after a conversion.
+- Image: `gotenberg/gotenberg:9.8.0@sha256:5467aaf0bb2a8b296b589a388bc7fd2a0b245fd71e63a64bb42baba63cbf3914`.
+
 ## 9.6.0 (2026-11-17)
 
 - No breaking changes. Gotenberg is stateless, so there is no data to migrate.
