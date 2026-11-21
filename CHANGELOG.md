@@ -2,6 +2,13 @@
 
 Each entry is one version of this Railway template. Breaking changes come first.
 
+## 9.9.1 (2026-11-21)
+
+- No breaking changes. Gotenberg is stateless, so there is no data to migrate; your basic-auth credentials are unchanged.
+- Gotenberg [9.9.1](https://github.com/gotenberg/gotenberg/releases/tag/v9.9.1): `extract-attachments` now caps each decoded attachment at `--pdf-max-stream-bytes`, so a small crafted PDF can no longer expand to any size on disk and in the response.
+- Gotenberg [9.9.0](https://github.com/gotenberg/gotenberg/releases/tag/v9.9.0): a `locale` field on `/forms/libreoffice/convert`, `compressStreams` (on by default) for `optimize`, and smaller `remediate` output.
+- Image: `gotenberg/gotenberg:9.9.1@sha256:0fc05327fcc4af8ba84bb99b3da35fe728840d98cef9d3bf0d701bd077834eb5`.
+
 ## 9.8.0 (2026-11-19)
 
 - No breaking changes. Gotenberg is stateless, so there is no data to migrate.
