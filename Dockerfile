@@ -1,6 +1,6 @@
 # Gotenberg for Railway: the official image, pinned by version and digest.
 # Upstream: https://github.com/gotenberg/gotenberg
-FROM gotenberg/gotenberg:9.9.1@sha256:0fc05327fcc4af8ba84bb99b3da35fe728840d98cef9d3bf0d701bd077834eb5
+FROM gotenberg/gotenberg:9.9.2@sha256:f6b4b6f7c8ae0ca7805f9e105ef989bf13b02d548378fa784c3630a9c479c31b
 
 # Listen on the port Railway gives the service ($PORT), on every interface
 # (public domain and private network).
