@@ -2,6 +2,14 @@
 
 Each entry is one version of this Railway template. Breaking changes come first.
 
+## 9.9.2 (2026-11-22)
+
+- No breaking changes for this template's settings, and no new or changed variables. Gotenberg is stateless, so there is no data to migrate; your basic-auth credentials are unchanged.
+- Behaviour change in the Markdown routes: the `index.html` page may now hold only text and `{{ toHTML "<file>" }}` actions, each Markdown file named once. Anything else (other Go template actions, a file named twice) now answers `400`. Pages that follow Gotenberg's documented Markdown usage are not affected.
+- Gotenberg [9.9.2](https://github.com/gotenberg/gotenberg/releases/tag/v9.9.2) is a security fix release: Markdown pages can no longer loop until CPU or memory runs out, page selections, form fields and archive extraction stay bounded, Chromium no longer opens a DevTools port, web workers can't read `file://` URLs, and a handler past its hard timeout can't write into another request's response.
+- How to apply: accept Railway's "update available" notice on the Gotenberg service. To go back, redeploy the previous deployment (9.9.1) from the service's Deployments tab.
+- Image: `gotenberg/gotenberg:9.9.2@sha256:f6b4b6f7c8ae0ca7805f9e105ef989bf13b02d548378fa784c3630a9c479c31b`.
+
 ## 9.9.1 (2026-11-21)
 
 - No breaking changes. Gotenberg is stateless, so there is no data to migrate; your basic-auth credentials are unchanged.
