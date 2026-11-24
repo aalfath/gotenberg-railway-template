@@ -2,6 +2,14 @@
 
 Each entry is one version of this Railway template. Breaking changes come first.
 
+## 9.9.3 (2026-11-24)
+
+- No breaking changes for this template's settings, and no new or changed variables. Gotenberg is stateless, so there is no data to migrate; your basic-auth credentials are unchanged.
+- Behaviour change in returned filenames: names in ZIP responses, `Content-Disposition` headers, the `attach` stage and `extract-attachments` now keep only letters, digits, spaces and common punctuation; any other character becomes `_`. Windows device names such as `CON` get a `_` prefix, and ZIP entries whose names differ only by case get a ` (2)` suffix. Ordinary filenames are unchanged.
+- Gotenberg [9.9.3](https://github.com/gotenberg/gotenberg/releases/tag/v9.9.3) is a security fix release (GHSA-mpvc-5c48-6c4r, GHSA-f47w-2mr6-4rwm, GHSA-vx35-gjgc-xcch): LibreOffice's HTTPS requests now follow the path rules of `--libreoffice-deny-list`, allow lists admit the HTTPS tunnels of the hosts they name, and output filenames can no longer point at a Windows path.
+- How to apply: accept Railway's "update available" notice on the Gotenberg service. To go back, redeploy the previous deployment (9.9.2) from the service's Deployments tab.
+- Image: `gotenberg/gotenberg:9.9.3@sha256:9731688d1b6290e4c04d9a47dbd5fb29f92aa0076feb6592c5c777525892cd72`.
+
 ## 9.9.2 (2026-11-22)
 
 - No breaking changes for this template's settings, and no new or changed variables. Gotenberg is stateless, so there is no data to migrate; your basic-auth credentials are unchanged.
